@@ -1,11 +1,7 @@
 __pycache__
 .vscode
 images
-templates
 venv
-*.jpg
-*.jpeg
-*.png
 
 # Specific file
 pip_stuff

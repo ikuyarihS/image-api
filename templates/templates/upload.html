@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upload Image</title>
+</head>
+
+<body>
+
+    {% if msg %}
+    <h1>{{ msg }}</h1>
+    {% endif %}
+
+    <h1>Upload new File</h1>
+
+    <form method=post enctype=multipart/form-data> <p><input type=file name=file>
+        <input type=submit value=Upload>
+    </form>
+
+    <h1>Results:</h1>
+
+    {% if blur_score %}
+    <p> <b> {{ blur_score }} </b></p>
+    {% else %}
+    <p> No blurry score. </p>
+    {% endif %}
+
+    <h1>Image uploaded:</h1>
+    {% if img_src %}
+    <img src="{{ img_src }}">
+    {% endif %}
+</body>
+
+</html>
